@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Complier</title>
+    <style>
+        /* Navigation Bar */
+        .navbar {
+            background-color: #EAE6F5;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            /* This ensures vertical center alignment of all flex items */
+            justify-content: space-between;
+            /* This spaces out the logo and the menu items */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            /* Ensure the menu items are also vertically centered */
+        }
+
+        .navbar li a {
+            display: flex;
+            /* Using flex here to center the text inside the anchor */
+            align-items: center;
+            /* Vertical alignment for text inside the anchor */
+            justify-content: center;
+            /* Horizontal alignment for text inside the anchor */
+            color: #000000;
+            padding: 10px 20px;
+            font-family: Proxima Nova;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            height: 40px;
+            /* Match height to logo for consistent sizing */
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: #4B208C;
+            color: white;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            /* Center logo vertically */
+            height: 40px;
+            /* Specify a height for the logo container */
+        }
+
+        .navbar .logo img {
+            height: 100%;
+            /* Make logo image fill the container height */
+            width: auto;
+        }
+
+        .navbar .logo .website-name {
+            font-size: 1.5em;
+            font-family: "Poppins", sans-serif;
+            color: #4B0082;
+            font-weight: bold;
+            line-height: 40px;
+            padding: 10px;
+            /* This should match the logo image height for alignment */
+        }
+
+        /* End of Navigation Bar */
+        .shortcut-icon {
+            width: 24px;
+            /* Small icon size */
+            height: 24px;
+            /* Icon position adjusted in the flex container */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Optional: Adjusts box-sizing to include padding and border in the element's total width and height */
+        }
+
+        button {
+            display: block;
+            background-color: #4B208C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px auto;
+            width: 100px;
+            height: 40px;
+
+        }
+
+
+        button:hover {
+            background-color: #5625A8;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="C:\Users\ASUS\OneDrive - King Abdullaziz University\Desktop\Prject499\Picture1.png" alt="Logo">
+            <span class="website-name">codeBridge</span>
+        </div>
+        <ul>
+
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">ASSIGNMENETS</a></li>
+            <li><a href="">TUTOIRALS</a></li>
+            <li><a href="">CHATAI</a></li>
+            <li> <a href="Helper.html">
+                    <img src="C:\Users\ASUS\OneDrive - King Abdullaziz University\Desktop\Prject499\helper_icon.png"
+                        class="shortcut-icon" alt="HELPER" /></a></li>
+        </ul>
+    </div>
+
+    <div>
+
+        <button type="button">Run</button>
+        <button type="button">Save</button>
+        <button type="button">Read</button>
+        <button type="submit">Submit</button>
+    </div>
